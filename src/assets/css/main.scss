@@ -1,0 +1,13 @@
+// $bgcolor: salmon;
+// $banBgPathAbt:image-url('../img/banner-fund-mngt.jpg');
+$banBgPathAbt:url(../image/banner-fund-mngt.jpg) no-repeat left top;
+
+body{
+    background:#fff;
+    font-family: Poppins;
+    font-size: 13px;
+    h1{font-size: 25px;}
+    .top-banner-bg{background:$banBgPathAbt;height: 300px;}
+
+}
+.webGl{position: fixed;left: 0;top: 0;outline: none;}
