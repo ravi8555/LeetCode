@@ -4,12 +4,20 @@ import style from '../css/main.scss';
 // import componentCircle from './circle.js'
 import nmlcss from "../css/normalize.scss";
 // leetcode
-import leetCode from "../js/leetcode.js";
+// import leetCode from "../js/leetcode.js";
+// form
+
+import form from "../js/form.js";
 // const heading = "Welcome to Digiserve";
 // document.querySelector('h2').innerText = heading 
 
 console.log("check");
 // cube
-document.body.append(leetCode())
+
+// // leetcode
+// document.body.append(leetCode())
+
+// leetcode
+// document.body.append(form())
 
 // circle
