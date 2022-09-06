@@ -1,7 +1,11 @@
 // $bgcolor: salmon;
 // $banBgPathAbt:image-url('../img/banner-fund-mngt.jpg');
 $banBgPathAbt:url(../image/banner-fund-mngt.jpg) no-repeat left top;
-
+// @import "quize";
+@import "normalize";
+// @import "cntdwn";
+// @import "balloon-game";
+@import "guess-number.scss";
 body{
     background:#fff;
     font-family: Poppins;

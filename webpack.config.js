@@ -62,7 +62,7 @@ module.exports = {
     plugins:[new HtmlWebpackPlugin({
         title: "Blog",
         filename: "index.html",
-        template: path.resolve(__dirname, 'src/leetcode.html')
+        template: path.resolve(__dirname, 'src/guess-number.html')
        }),
        new MiniCssExtractPlugin()
     ]

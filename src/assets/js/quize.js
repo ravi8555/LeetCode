@@ -66,14 +66,22 @@ let currAns = 0;
 let quizEnd = false;
 
 $(document).ready( function(){
+
     displayCurQstn();
+
+    console.log(displayCurQstn());
+
     $(this).find('.quizMessage').hide();
-    $(this).find('.nextButton').click( function(){
+    $(this).find('.nextButton').on("click", function(){
         if(!quizEnd){
-            value = $('input[type="radio"].val()');
+            // console.log("on click");
+            value = $("input[name='radio']:checked").val();
+
             // console.log(value);
+
             if(value == undefined){
                 $(document).find(".quizMessage").text('Please Select Answer');
+                // console.log("value "+ value);
                 $(document).find(".quizMessage").show();
             }else{
                 $(document).find(".quizMessage").hide();
@@ -88,7 +96,7 @@ $(document).ready( function(){
                     $(document).find(".nextButton").text("Play Again ?");
                     quizEnd = true;
                 }
-                console.log(currAns);
+                // console.log(currAns);
             }
         }else{
             quizEnd = false;
@@ -101,12 +109,15 @@ $(document).ready( function(){
     });
 });
 function displayCurQstn(){
-    console.log("In display current question");
+    // console.log("In display current question");
+
     let questn = questions[currQst].question;
+    // console.log(questn);
     let questClass = $(document).find('.quizContainer > .question');
-    let choiceLst = $(document).find('quizContainer > choiceList');
+    let choiceLst = $(document).find('quizContainer > .choiceList');
     let numChoice = questions[currQst].choices.length;
 
+    // console.log(questClass);
     $(questClass).text(questn);
 
     $(choiceLst).find("li").remove();
@@ -114,12 +125,20 @@ function displayCurQstn(){
     let chOice;
     for( i = 0; i < numChoice; i++){
         chOice = questions[currQst].choices[i];
-        $('<li><input type="radio" value='+ i + ' name="dynradio"/>' + chOice + '</li').appendTo(choiceLst);
+        $('<li><input type="radio" value=' + i + ' name="dynradio"/>' + chOice + '</li>').appendTo(choiceLst);
     }
 }
+
+// console.log(displayCurQstn());
 function resetQuiz(){
     currQst = 0;
     currAns = 0;
-    
-
+    hideScore()
+}
+function dispScore(){
+    $(document).find(".quizContainer > .result").text("Your Score" + currAns +" out of: " + questions.length);
+    $(document).find(".quizContainer > .result").show()
+} 
+function hideScore(){
+    $(document).find(".result").hide();
 }

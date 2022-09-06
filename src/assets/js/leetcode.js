@@ -1,3 +1,5 @@
+// console.log("Leetcode Js");
+
 function leetCode(){
     let m = document.createElement('main');
     let p = document.createElement('p');
@@ -52,7 +54,7 @@ function twoSum(nums, target){
         for(let j = i+1; j < nums.length; j++){
             if(nums[i]+nums[j] === target){return [i, j]}
         }
-        console.log(nums, target);
+        // console.log(1, 5);
     }
 }
 twoSum()
