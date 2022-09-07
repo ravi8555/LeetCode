@@ -62,7 +62,7 @@ module.exports = {
     plugins:[new HtmlWebpackPlugin({
         title: "Blog",
         filename: "index.html",
-        template: path.resolve(__dirname, 'src/progress-steps.html')
+        template: path.resolve(__dirname, 'src/form-input-wave.html')
        }),
        new MiniCssExtractPlugin()
     ]

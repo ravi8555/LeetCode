@@ -31,7 +31,23 @@
 // import expadcard from "../js/expanding-cards.js";
 
 // Progress
-import progrssStep from "../js/progress-steps.js";
+// import progrssStep from "../js/progress-steps.js";
+
+// // rotating-nav-animation
+// import rotateNav from "../js/rotating-nav-animation.js";
+
+//hidden-search
+// import hiddenSearch from "../js/hidden-search.js"
+
+// // scroll-animation
+// import scrollAnimation from "../js/scroll-animation.js"
+
+// // split-landing-page
+// import splitLandingPage from "../js/split-landing-page.js"
+
+// form-input-wave
+import formWave from "../js/form-input-wave.js";
+
 
 
 
