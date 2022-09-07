@@ -21,8 +21,17 @@
 // Balloon Game 
 // import count from "../js/balloon-game.js";
 
-// Guess the Numbers 
-import guessNumber from "../js/guess-number.js";
+// // Guess the Numbers 
+// import guessNumber from "../js/guess-number.js";
+
+// // 3d-boxes-background 
+// import box3d from "../js/3d-boxes-background.js";
+
+// // expanding-cards
+// import expadcard from "../js/expanding-cards.js";
+
+// Progress
+import progrssStep from "../js/progress-steps.js";
 
 
 
