@@ -12,7 +12,7 @@ currActive ++;
 if(currActive > circles.length){
     currActive = circles.length
 }
-console.log(currActive);
+// console.log(currActive);
 update()
 });
 
@@ -25,7 +25,7 @@ prev.addEventListener('click', ()=>{
     }
 
     update()
-    console.log(currActive);
+    // console.log(currActive);
 });
 
 function update(){
